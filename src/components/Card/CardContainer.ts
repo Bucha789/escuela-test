@@ -5,7 +5,6 @@ export const CardContainer = async (app: HTMLDivElement) => {
   const cardContainer = document.createElement('div');
   const {products} = await getProducts();
   cardContainer.classList.add('row');
-  console.log(products);
   products.forEach((product) => {
     cardContainer.innerHTML += Card(product);
   });

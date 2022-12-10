@@ -7,7 +7,6 @@ export const FormContainer = () => {
   const FormContainer = document.createElement('div');
 
   addButton?.addEventListener('click', () => {
-    console.log('hola')
     if (!isOpen) {
       FormContainer.innerHTML = '';
       isOpen = true;
