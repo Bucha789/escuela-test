@@ -1,4 +1,4 @@
-import { getProducts } from "../helpers/getProducts";
+import { getProducts } from "../../helpers/getProducts";
 import { Card } from "./Card";
 
 export const CardContainer = async (app: HTMLDivElement) => {

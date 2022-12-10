@@ -1,4 +1,4 @@
-import { Product } from "../types";
+import { Product } from "../../types";
 
 export const Card = ({brand, category, description, price, images, title}: Product) => {
   return `
