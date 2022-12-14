@@ -10,8 +10,14 @@
   <body>
     <header class="d-flex bg-dark justify-content-between align-items-center px-4">
       <h2 class="text-white">ITSZ Products</h2>
-      <nav id="navContainer" class="position-relative">
-        <button class="btn btn-primary" id="addbutton">Add new product</button>
+      <nav id="navContainer" class="position-relative col-5 d-flex align-items-center">
+        <form id="searchForm" class="input-group mr-3">
+          <input type="text" class="form-control" placeholder="Search products for name..." name="searchText">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+          </form>
+        </div>
+        <button class="btn btn-primary w-50" id="addbutton">Add new product</button>
       </nav>
     </header>
 

@@ -11,6 +11,7 @@
   background-color: #e2e2e2;
   right: 0;
   z-index: 10;
+  top: 120%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

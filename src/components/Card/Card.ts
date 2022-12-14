@@ -1,4 +1,5 @@
 import { Product } from "../../types";
+import { colorsDictionary } from "../../utils/colorsDictionary";
 
 export const Card = ({brand, category, description, price, images, title}: Product) => {
   return `
@@ -8,8 +9,8 @@ export const Card = ({brand, category, description, price, images, title}: Produ
         <h3 class="card-title">${title}</h3>
         <p class="card-text">${description}</p>
         <div class="d-flex justify-content-between align-items-center">
-          <p>${category}</p>
-          <p class="text-muted">$${price}</p>
+          <p class="${colorsDictionary[category] || 'bg-primary'} text-white rounded px-2">${category}</p>
+          <p class="text-muted">$${price.toFixed(2)}</p>
         </div>
       </div>
     </div>
